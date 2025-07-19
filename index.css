@@ -354,22 +354,7 @@ a.btn-link::after {
   align-items: center;
   display: flex;
   flex-direction: column;
-  /* background: linear-gradient(135deg, #49e4e4 0%, #d13dbe 100%); */
-  /* background-size: 200% 200%; */
-  /* animation: moveGradient 10s ease infinite; */
-
 }
-/* @keyframes moveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
 .blog-content img{
   width :200px;
   height:auto;
