@@ -17,7 +17,8 @@
                 <li><a href="#">Labs</a></li>
             </ul>
         </nav>
-    
+        <div id="progress-bar"></div>
+
         <!-- <a href="#" class="cta"><button>Contact</button></a> -->
     </header>
     <main>
@@ -25,7 +26,7 @@
             <div class="i-title">
                 <h2>How the internet really works</h2> 
                 <p>A summary on a book you should read</p> 
-                <span>29 /7/2025</span>
+                <span id="intro">29 /7/2025</span>
             </div>
         </section>
         <section class="blog">
@@ -34,34 +35,32 @@
               <nav>
                 <h3>On this page</h3>
                 <ul>
-                  <li><a href="#intro">Introduction</a></li>
+                  <li><a href="#intro">Review</a></li>
                   <li><a href="#network">Networks & Protocols</a></li>
                   <li><a href="#dns">How DNS Works</a></li>
                 </ul>
               </nav>
             </aside>
             <main class="blog-content">
-              <article>
-                                <img src="./Screenshot 2025-07-19 182516.png" alt="">
+              <article class="first-article">
+                <img src="./Screenshot 2025-07-19 182516.png" alt="">
+                <div class="description">
+                  <h1 >Book Review</h1> 
+                  <p>In my quest for fun & great networking resources, <br><strong></strong><em>How the internet Really works</em></strong> is arguably one of the best starting points! <br> The creators give a visual overview of how the internet works; from your home to the world, stakeholders involved ; and how censorship and tech giants  influence us. Even though its not your typical networking book, you couldn't start better!</p>
+                  <p id="network">⭐⭐⭐⭐⭐ <span class="Giga"><em>Rated Giga on the chad scale</em></span></p>
 
-                <h1 id="intro">How the Internet Really Works</h1>
-                <p>This article explores the foundations of how the internet connects the world...</p>
-                
-                <h2 id="network">1. Networks & Protocols</h2>
-                <p>TCP/IP, HTTP, and more...</p>
-                
-                <h2 id="dns">2. DNS Explained</h2>
-                <p>The Domain Name System (DNS) is like the phonebook of the web...</p>
+                </div>
+                              
               </article>
               <article>
-                <h1 id="intro">How the Internet Really Works</h1>
-                <p>This article explores the foundations of how the internet connects the world...</p>
-                
-                <h2 id="network">1. Networks & Protocols</h2>
-                <p>TCP/IP, HTTP, and more...</p>
-                
-                <h2 id="dns">2. DNS Explained</h2>
-                <p>The Domain Name System (DNS) is like the phonebook of the web...</p>
+                <p style="font-size: 1.2rem; font-weight: bold;">Rather than a bottom -down approach, ill start at the top downwards to home networks</p>
+                <h2>chapters</h2>
+                <ul>
+                  <li>Governace </li>
+                  <li>Autonoomous systems</li>
+                  <li>Internet travel</li>
+                  <li>Security</li>
+                </ul>
               </article>
               <article>
                 <h1 id="intro">How the Internet Really Works</h1>
@@ -125,5 +124,14 @@
           
         </section>
     </main>
+    <script>
+    window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    document.getElementById('progress-bar').style.width = scrollPercent + '%';
+  });
+</script>
+
 </body>
 </html>
